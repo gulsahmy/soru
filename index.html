@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Takip Sistemi</title>
+</head>
+<body>
+    <h2>Öğrenci Kaydı</h2>
+    <input type="text" id="studentName" placeholder="Öğrenci Adı">
+    <input type="number" id="grade" placeholder="Sınıf">
+    <button onclick="registerStudent()">Öğrenci Kaydet</button>
+
+    <h2>Ders Kaydı</h2>
+    <input type="text" id="courseName" placeholder="Ders Adı">
+    <input type="text" id="teacherName" placeholder="Öğretmen Adı">
+    <button onclick="registerCourse()">Ders Kaydet</button>
+
+    <h2>Derslere Öğrenci Kaydı</h2>
+    <input type="text" id="enrollStudentName" placeholder="Öğrenci Adı">
+    <input type="text" id="enrollCourseName" placeholder="Ders Adı">
+    <button onclick="enrollToCourse()">Kaydol</button>
+
+    <h2>Öğrenci Notları ve Ders Ortalamaları</h2>
+    <button onclick="displayAllGrades()">Tüm Notları Göster</button>
+    <button onclick="displayAllAverages()">Tüm Ders Ortalamalarını Göster</button>
+
+    <script src="./spread.js"></script>
+</body>
+</html>
